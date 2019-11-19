@@ -1,0 +1,5 @@
+winner, max_votes = "", 0
+for name, votes in election_results.items():
+    if votes > max_votes:
+        max_votes = votes
+        winner = name
