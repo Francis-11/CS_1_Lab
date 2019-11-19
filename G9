@@ -1,0 +1,6 @@
+not_found = set()
+for x in lst:
+    if(x in d.keys()):
+        del d[x]
+    else:
+        not_found.add(x)
