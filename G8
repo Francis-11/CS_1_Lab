@@ -1,0 +1,9 @@
+number_of_items = 0
+i = 0
+total_spent = 0
+while i < len(shopping_list):
+    if shopping_list[i] in prices:
+        if prices[shopping_list[i]]+total_spent <= budget:
+            total_spent += prices[shopping_list[i]]
+            number_of_items += 1
+    i += 1
